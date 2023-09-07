@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 24px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: blueviolet;
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsec{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .firstsec div{
+            width: 30%
+        }
+        .leftsec{
+            font-size: 2.5rem;
+            margin: 70px 0;
+        }
+        .rightsec{
+        }
+        .pur{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+        .secondsec{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        hr{
+            border: 0;
+            background-color: blueviolet;
+            height: 2px;
+            margin: 56px;
+        }
+        .secondsec h1{
+            font-size: 2rem;
+        }
+        .text-grey{
+            color: grey;
+        }
+        .secondsec .box{
+            display: flex;
+        }
+        .secondsec .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .ver-text{
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+        .ver-desc{
+            position: relative;
+            top: 87px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+        .image-top{
+             width: 30px;
+             position: relative;
+             top: -32px;
+             left: -9px;
+        }
+        footer{
+            background-color: rgb(18, 18, 62);
+            height: 230px;
+        }
+        .flex{
+            display: flex;
+            padding: 20px;
+            justify-content: space-evenly;
+        }
+        .flex ul{
+            list-style: none;
+        }
+        .flex > div{
+            width: 223px;
+        }
+        footer .text-center{
+            text-align: center;
+            color: grey;
+            padding: 12px 0px;
+        }
+        .leftsec .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;   
+            border: 2px solid white;    
+            border-radius : 6px;
+            font-size: 20px;
+        }
+        .leftsec .buttons{
+            padding: 50px 0px;
+        }
+        .buttons{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Nallana Raghvendra</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/raghavendra-nallana-0a3236242">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class = "firstsec">
+            <div class = "leftsec">Hi, My name is <span class="pur">Nallana Raghavendra</span> and Iam a Web Developer
+                <BR><span id="element"></span>
+                <div class="buttons">
+                   <button class="btn"><a style="text-decoration: none; color: white;" href="https://www.linkedin.com/in/raghavendra-nallana-0a3236242">Linkedin</a></button>&nbsp;&nbsp;
+                   <button class="btn">Resume</button>
+                </div>
+            </div>
+            <div class="rightsec">
+                <img src="dev1.png" alt="" height="80%" width="120%">
+            </div>
+        </section>
+        <hr>
+        <section class = "secondsec">
+            <span class = "text-grey">What I have done so far</span>
+            <h1>Certifications</h1>
+            <div class="box" style="background: white; width: 80vw; height:2px; margin: 56px 0;">
+            <div class="vertical">
+                <img class = "image-top" src="pthon.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://coursera.org/verify/VDMJ9UKPXH9Q">Python</a>
+                </div>
+            <div class = "ver-desc"> Completed the python basic certification issued by Coursera,Hackerrank,Codechef
+            </div>
+            </div>
+            <div class="vertical">
+                <img class = "image-top" src="java.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://www.hackerrank.com/certificates/7d662cdf717d">Java</a>
+                </div>
+            <div class = "ver-desc"> Completed the Java basic certification issued by Hackerrank, Java Advanced in Codechef
+            </div>
+            </div>
+            <div class="vertical">
+                <img class = "image-top" src="sql.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://www.hackerrank.com/certificates/ddfeea33080a">SQL</a>
+                </div>
+            <div class = "ver-desc"> Completed the SQL basic certification issued by Hackerrank,Codechef,Leetcode
+            </div>
+            </div>
+            <div class="vertical">
+                <img class = "image-top" src="html.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://www.coursera.org/account/accomplishments/certificate/6QKV7HAJJG63">HTML</a>
+                </div>
+            <div class = "ver-desc"> Completed the HTML basic certification issued by Coursera.
+            </div>
+            </div>
+            <div class="vertical">
+                <img class = "image-top" src="css.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://www.coursera.org/account/accomplishments/certificate/6QKV7HAJJG63">CSS</a>
+                </div>
+            <div class = "ver-desc"> Completed the CSS basic certification issued by Coursera.
+            </div>
+            </div>
+            <div class="vertical">
+                <img class = "image-top" src="data.png" alt="">
+                <div class="ver-text">
+                    <a style="text-decoration: none; color: blueviolet;" href="https://www.credly.com/badges/b9a19e60-2e3a-48ca-a89c-05ecf24bd981/linked_in_profile">DataAnalytics</a>
+                </div>
+            <div class = "ver-desc"> Completed the DataAnalytics basic certification in accenture issued by Forage.
+            </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="first">
+                <h3>Nallana Raghavendra's Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="text-center">raghavendranallana@gmail.com</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Problem solver','Public Speaker'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
